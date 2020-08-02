@@ -1,0 +1,72 @@
+.contactform {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    ". . . container container container container container container . . .";
+}
+.contactform__cta {
+    grid-area: container;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    ". . . h2 h2 h2 h2 h2 h2 . . ."
+    ". . . form form form form form form . . .";
+}
+.contactFrom{
+    display: grid;
+    grid-gap: 10px;
+    grid-area: form;
+}
+.contactform__cta h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    grid-area: h2;
+}
+input, textarea {
+    padding: 10px;
+    font-size: 18px;
+}
+form button {
+    background-color: black;
+    border-radius: 0px;
+    align-content: center;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-family: Oswald;
+    text-transform: uppercase;
+    font-size: 25px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #34A99C;
+    transition: all 1s ease;
+}
+.invalid {
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(255,0,0,1);
+    box-shadow: 0px 0px 15px 2px rgba(255,0,0,1);
+}
+.valid {
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(85,255,0,1);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(85,255,0,1);
+    box-shadow: 0px 0px 15px 2px rgba(85,255,0,1);
+}
+@media only screen and (max-width: 1000px) { 
+    .contactform {
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        ". container container container container container container .";
+    }
+    .contactform__cta {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        ". h2 h2 h2 h2 h2 h2 ."
+        ". form form form form form form .";
+    }
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Cardo;
+    src: url(../assets/fonts/Cardo/Cardo-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald/Oswald-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
