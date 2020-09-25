@@ -1,0 +1,32 @@
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+}
+footer .introduction__links {
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+footer ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 5px;
+    color: white;
+    font-size: 30px;
+}
+footer a {
+    color: white;
+}
+footer p {
+    text-align: center;
+}

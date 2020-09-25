@@ -1,0 +1,53 @@
+.aboutMyself {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    padding: 40px 0px 35px 0px;
+}
+.aboutMyself__bio {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    padding: 20px 0px 20px 0px;
+}
+.aboutMyself__bio h2 {
+    margin-bottom: 20px;
+}
+.aboutMyself__skills {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    padding: 20px;
+    text-align: center;
+}
+.aboutMyself__skills img {
+    max-width: 100px;
+    -webkit-transition: transform 1s linear;
+	-moz-transition: transform 1s linear;
+	-o-transition: transform 1s linear;
+	transition: transform 1s linear;
+}
+.aboutMyself__skills img:hover {
+    -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+@media only screen and (max-width: 1000px) {
+    .aboutMyself__bio {
+        grid-column-start: 3;
+        grid-column-end: 11;
+    }
+    .aboutMyself__skills {
+        grid-column-start: 3;
+        grid-column-end: 11;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .aboutMyself__bio {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+    .aboutMyself__skills {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+}
